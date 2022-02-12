@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Shizuru&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&family=Shizuru&display=swap');
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+box-sizing: border-box;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;}
+
+#left {
+    height: 100vh;
+    width: 35%;
+    background-image: url(./images/city.jpg);
+    background-size: cover;
+}
+
+#left-banner {
+    background-color: rgba(8, 8, 29, 0.6);
+    width: 100%;
+    height: 20%;
+    top: calc(0.15 * 100vh);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.material-icons {
+    color: aliceblue;
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 6em;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
+  
+
+h1 {
+    margin: 2%;
+    color: aliceblue;
+    font: 700;
+    font-size: 5em;
+    font-family: 'Sacramento','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#right {
+    background-color: white;
+    height: 100vh;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#right-top, #right-middle, #right-bottom {
+    width: 100%;
+}
+
+#right-top {
+    top: calc(0.16 * 100vh);
+    position: relative;
+    height: 35%;
+}
+
+#right-top > h3,#right-top > span {
+    font-size: 1.3em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 5%;
+    margin-bottom: 3%;
+    font-weight: 600;
+    width: 60%;
+    color: #182325;
+}
+
+#right-middle {
+
+    height: 35%;
+    box-shadow: 24px 7px 23px 15px rgba(171,171,171,0.75);
+    -webkit-box-shadow: 24px 7px 23px 15px rgba(171,171,171,0.75);
+    -moz-box-shadow: 24px 7px 23px 15px rgba(171,171,171,0.75);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#right-bottom {
+
+    height: 30%;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+button {
+    border-radius: 5px;
+    background-color: #32354c;
+    border: #32354c;
+    color: aliceblue;
+    font-size: 1em;
+    height: 15%;
+    width: auto;
+    margin-top: 3%;
+    margin-left: 2%;
+    margin-bottom: 1%;
+}
+
+button + span {
+    margin-left: 2%;
+    color: #182325;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+div > h3 > span {
+    font-style: italic;
+}
